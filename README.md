@@ -72,3 +72,22 @@ ElevenLabs → AI + Voice generation and
 Translation APIs → Language conversion.
 
 
+
+User Devices  -->  Frontend Application  -->  Secure Connection (WebSocket)  -->  API Gateway / Orchestrator  -->  Translation Service 
+-->  AI Agent (ElevenLabs)  -->  Text-to-Speech (TTS)  -->  Frontend (Output to User) 
+                                                                                                
+                                                                                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
