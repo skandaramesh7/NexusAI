@@ -14,61 +14,61 @@
 
 
 
-1. User Interaction
+1. User Interation ---
 User speaks into the app (mobile/laptop).
 The frontend (built using Lovable.dev) captures:
- Voice input
+ Voice input and
  Plays audio output
 -----------------------------------------------------------------------------------------------------------------------------------------
-2. Secure Connection
+2. Secure Connection ---
 The frontend sends audio to backend using:
 WebSocket or WebRTC (real-time communication)
 -----------------------------------------------------------------------------------------------------------------------------------------
-3. API Gateway / Orchestrator
+3. API Gateway / Orchestrator ---
 Acts as the brain controller (Node.js / Python).
 Responsibilities:
-Receives user audio
-Sends data to different services (STT, translation, AI)
+Receives user audio,
+Sends data to different services (STT, translation, AI) and
 Manages chat flow
 -----------------------------------------------------------------------------------------------------------------------------------------
-4. Speech-to-Text (STT)
+4. Speech-to-Text (STT) ---
 Converts voice → text using models like Whisper.
 Output: User speech becomes readable text.
 -----------------------------------------------------------------------------------------------------------------------------------------
-5. Translation Service (Optional)
+5. Translation Service (Optional) ---
 Converts text into another language if needed.
 Uses translation APIs (like Google Translate).
 -----------------------------------------------------------------------------------------------------------------------------------------
-6. AI Agent (ElevenLabs)
+6. AI Agent (ElevenLabs) ---
 Processes the text input.
 Generates a smart response (like a chatbot).
 Output: Response in text format.
 -----------------------------------------------------------------------------------------------------------------------------------------
-7. Text-to-Speech (TTS)
+7. Text-to-Speech (TTS) ---
 Converts AI text response → voice.
 Uses ElevenLabs or other TTS tools.
 Output: Natural-sounding audio.
 -----------------------------------------------------------------------------------------------------------------------------------------
-8. Response to User
+8. Response to User ---
 Audio response is sent back to frontend.
 User hears the chatbot reply.
 -----------------------------------------------------------------------------------------------------------------------------------------
-9. Database (Background Work)
+9. Database (Background Work) ---
 Stores:
-Chat history
-User session data
+Chat history,
+User session data and
 Uses Redis / PostgreSQL (Dockerized).
 -----------------------------------------------------------------------------------------------------------------------------------------
-10. Docker (Local Setup)
+10. Docker (Local Setup) ---
 All backend services run in containers:
-API Gateway
-STT (Whisper)
-Database
+API Gateway,
+STT (Whisper) and
+Database.
 Makes setup easy and consistent.
 -----------------------------------------------------------------------------------------------------------------------------------------
-11. Cloud Services
+11. Cloud Services ---
 External APIs used:
-ElevenLabs → AI + Voice generation
-Translation APIs → Language conversion
+ElevenLabs → AI + Voice generation and
+Translation APIs → Language conversion.
 
 
